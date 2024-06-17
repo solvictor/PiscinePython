@@ -49,8 +49,7 @@ def ft_tqdm(lst: range) -> Generator[int, None, None]:
 
 
 def main():
-    """Compares the ft_tqdm
-    """
+    """Compares the ft_tqdm"""
 
     n = 333
     mul = 1
