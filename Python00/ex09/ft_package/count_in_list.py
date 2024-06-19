@@ -1,4 +1,4 @@
-def count_in_list(lst, item):
+def count_in_list(lst, e):
     """Count the number of occurences of e in lst
 
     Args:
@@ -9,4 +9,4 @@ def count_in_list(lst, item):
         int: Number of occurences of e in lst
     """
 
-    return lst.count(item)
+    return lst.count(e)
