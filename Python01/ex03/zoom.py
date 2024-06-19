@@ -4,7 +4,7 @@ import numpy as np
 
 
 def main():
-    """Load animal.jpgs an zoom it in"""
+    """Load animal.jpeg and zoom it in"""
 
     pixels = ft_load("animal.jpeg")
     if pixels is None:
@@ -23,12 +23,13 @@ def main():
         center_x - half_square: center_x + half_square
     ]
 
+    # Grey filter
     zoomed = np.dot(zoomed, [0.299, 0.587, 0.114])
 
     print("New shape after slicing:", zoomed.shape)
     print(zoomed)
 
-    plt.imshow(zoomed, cmap="gray")
+    plt.imshow(zoomed, cmap="grey")
     plt.show()
 
 

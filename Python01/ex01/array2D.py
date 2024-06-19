@@ -39,7 +39,7 @@ def main():
     ]
 
     print(slice_me(family, 0, 2))
-    print(slice_me(family, -1, -2))
+    print(slice_me(family, 1, -2))
 
 
 if __name__ == "__main__":
