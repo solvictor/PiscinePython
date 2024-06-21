@@ -9,11 +9,17 @@ def main():
     if df is None:
         return
 
-    df = df[df["country"] == "France"]
+    country = "France"
+    start = 1800
+    end = 2080
+
     df = df.set_index("country")
     df = df.transpose()
-    df.plot(figsize=(6, 5), legend=False)
-    plt.title("France life expectancy projections")
+    df = df[country]
+
+    plt.plot(range(start, end + 21), df)
+    plt.title(country + " life expectancy projections")
+    plt.xticks(range(start, end + 1, 40))
     plt.xlabel("Year")
     plt.ylabel("Life expectancy")
     plt.show()

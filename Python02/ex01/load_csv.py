@@ -1,4 +1,5 @@
 import pandas
+import sys
 
 
 def load(path: str) -> pandas.DataFrame | None:
@@ -15,8 +16,8 @@ def load(path: str) -> pandas.DataFrame | None:
         data = pandas.read_csv(path)
         print("Loading dataset of dimensions", data.shape)
         return data
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"{e.__class__.__name__}: {e}", file=sys.stderr)
     return None
 
 
