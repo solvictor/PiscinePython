@@ -18,7 +18,7 @@ def main():
     df = df[country]
 
     plt.plot(range(start, end + 21), df)
-    plt.title(country + " life expectancy projections")
+    plt.title(country + " Life expectancy projections")
     plt.xticks(range(start, end + 1, 40))
     plt.xlabel("Year")
     plt.ylabel("Life expectancy")
