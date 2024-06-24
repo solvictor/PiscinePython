@@ -29,6 +29,8 @@ class Stark(Character):
 
 
 def main():
+    """Test this file's classes"""
+
     Ned = Stark("Ned")
     print(Ned.__dict__)
     print(Ned.is_alive)
