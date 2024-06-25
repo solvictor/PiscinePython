@@ -25,14 +25,14 @@ def pow(x: int | float) -> int | float:
 
 
 def outer(x: int | float, function) -> object:
-    """_summary_
+    """Allows repeated calls to a function using outpout as input
 
     Args:
-        x (int | float): _description_
-        function (_type_): _description_
+        x (int | float): initial input
+        function (Callable[[int | float], float]): function to repeat
 
     Returns:
-        object: _description_
+        object: the function wrapper
     """
 
     def inner() -> float:
@@ -58,4 +58,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-# TODO Comment
